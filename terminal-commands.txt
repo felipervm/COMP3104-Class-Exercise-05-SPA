@@ -1,0 +1,13 @@
+git branch dep-inclusions
+git checkout dep-inclusions
+npm install
+npm run build
+npm start
+git add package.json
+git commit -m "Add React project dependencies and scripts"
+git add package-lock.json
+git commit -m "Add dependency lock file"
+git add src public
+git commit -m "Include React SPA application source"
+git push --set-upstream origin dep-inclusions
+git log --oneline --decorate -5
