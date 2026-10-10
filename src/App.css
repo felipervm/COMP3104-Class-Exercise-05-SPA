@@ -1,0 +1,108 @@
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 20px;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: #ffffff;
+  border-top: 4px solid #333333;
+  padding: 42px 54px 48px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 22px;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-top: 42px;
+  margin-bottom: 26px;
+}
+
+.developer-line {
+  text-align: center;
+  color: #8b1d91;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+
+.student-form {
+  width: min(430px, 100%);
+  margin: 0 auto;
+}
+
+.student-form label {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.student-form label span {
+  text-align: right;
+  font-weight: 600;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+
+.student-form button {
+  display: block;
+  margin: 8px auto 0;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 2px;
+  background: #39ad59;
+  color: white;
+  cursor: pointer;
+}
+
+.student-form button:hover {
+  background: #2f914a;
+}
+
+.empty-state {
+  text-align: center;
+  color: #444;
+}
+
+.student-list {
+  width: min(500px, 100%);
+  margin: 0 auto;
+  padding-left: 22px;
+}
+
+.student-list li {
+  padding: 8px 0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px 36px;
+  }
+
+  .student-form label {
+    grid-template-columns: 1fr;
+  }
+
+  .student-form label span {
+    text-align: left;
+  }
+}
